@@ -22,8 +22,8 @@ OpenRAVE::InterfaceBasePtr CreateInterfaceValidated(OpenRAVE::InterfaceType type
 
 void GetPluginAttributesValidated(OpenRAVE::PLUGININFO& info)
 {
-    info.interfacenames[OpenRAVE::PT_ProblemInstance].push_back("RRT*");
-    info.interfacenames[OpenRAVE::PT_Planner].push_back("RRT*");
+    info.interfacenames[OpenRAVE::PT_ProblemInstance].push_back("RRTStar");
+    info.interfacenames[OpenRAVE::PT_Planner].push_back("RRTStar");
 }
 
 RAVE_PLUGIN_API void DestroyPlugin()
